@@ -1,0 +1,39 @@
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <div class="form-group">
+        <fieldset class="fname-field">
+            {{ form.fname.label }}
+            {{ form.fname(class='form-control', placeholder='First Name') }}
+        </fieldset>
+        <fieldset class="lname-field">
+            {{ form.lname.label }}
+            {{ form.lname(class='form-control', placeholder='Last Name') }}
+        </fieldset>
+        <fieldset class="superheroname-field">
+            {{ form.superhero_name.label }}
+            {{ form.superhero_name(class='form-control', placeholder='Superhero Name') }}
+        </fieldset>
+        <fieldset class="description-field">
+            {{ form.description.label }}
+            {{ form.description(class='form-control', placeholder='Description') }}
+        </fieldset>
+        <fieldset class="weakness-field">
+            {{ form.weakness.label }}
+            {{ form.weakness(class='form-control', placeholder='Weakness') }}
+        </fieldset>
+        <fieldset class="normaljob">
+            {{ form.normal_job.label }}
+            {{ form.normal_job(class='form-control', placeholder='Normal Job') }}
+        </fieldset>
+        <fieldset class="team-field">
+            {{ form.team.label }}
+            {{ form.team(class='form-control', placeholder='Superhero Team') }}
+        </fieldset>
+        <fieldset class="gender-field">
+            {{ form.gender.label }}
+            {{ form.gender(class='form-control', placeholder='Gender') }}
+        </fieldset>
+
+        {{ form.submit_button(class='btn btn-primary btn-block mt-2')}}
+    </div>
+</form>
